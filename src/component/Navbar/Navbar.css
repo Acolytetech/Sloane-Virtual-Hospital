@@ -1,0 +1,68 @@
+/* Navbar.css */
+.navbar {
+    background-color: #ffffff;
+    border-radius: 80px;
+    margin-top: 20px;
+    /* padding: 10px 20px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed position to stay on top */
+    width: 100%; /* Full width */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of the hero image */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-actions a {
+    margin-left: 15px;
+    color: #333;
+  }
+  
+  .nav-actions .button {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .nav-actions .button i {
+    margin-right: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 8px 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-actions a {
+      margin-left: 10px;
+    }
+  }
+  

@@ -1,0 +1,156 @@
+.about-us-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: var(--dark-font-color);
+    text-align: left;
+    padding: 90px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.overlay-text h1 {
+    font-size: 76px;
+    margin: 0;
+}
+
+.overlay-text p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.flex-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.line {
+    margin-top: 20px;
+    width: 1px;
+    height: 80px;
+    background-color: var(--dark-font-color);
+}
+
+/* Vision Section */
+.vision-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 20px;
+    background-color:var(--light-bg-font-color);
+    /* Optional background for better contrast */
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+
+.vision-image {
+    flex: 1;
+    /* background: url('../../img/your-image.jpg') no-repeat center center; */
+    background-size: cover;
+    height: 700px;
+}
+
+.vision-text {
+    position: absolute;
+    top: 100px;
+    right: 165px;
+    flex: 1;
+    padding: 28px;
+    background-color: var( --light-bg-font-color);
+    border-radius: 10px;
+    z-index: 1;
+    /* Ensure it's above the image */
+    text-align: justify;
+
+    width: 500px;
+    height: fit-content;
+}
+
+.vision-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.vision-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.testimonial-section {
+
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 40px;
+    /* background-color: blanchedalmond; */
+}
+
+.testimonial-text {
+    width: 40%;
+    padding-left:100px;
+}
+
+.testimonial-cards {
+    width: 40%;
+    position: relative;
+    display: flex;
+    padding-left: 100px;
+    background-color: white;
+}
+
+.testimonial-cards .testimonial-card {
+    width: 40%;
+    height: 250px;
+    background:white;
+    position:absolute;
+    color: black;
+    box-shadow: 0px 1px 5px black;
+    text-align: center;
+    
+}
+.testimonial-cards .card1{
+    /* background:rgb(98, 197, 33); */
+    top: 0px;
+}
+
+.testimonial-cards .card2{
+    /* background:blue; */
+    top: 30px;
+    right: 0px;
+}
+
+.testimonial-cards .card3{
+    /* background:rgb(94, 94, 184); */
+    top: 280px;
+    left: 100px;
+}
+.testimonial-cards .card4{
+    /* background:rgb(212, 117, 53); */
+    top: 310px;
+    right: 0px;
+}
+
