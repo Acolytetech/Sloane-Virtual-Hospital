@@ -1,3 +1,4 @@
+/* Hero Image Section */
 .about-us-container {
     position: relative;
     width: 100%;
@@ -17,7 +18,7 @@
 
 .overlay-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 32%;
     transform: translate(-50%, -50%);
     color: var(--dark-font-color);
@@ -38,6 +39,7 @@
     margin-top: 10px;
 }
 
+/* Flex Container Styling */
 .flex-container {
     margin-top: 10px;
     display: flex;
@@ -45,10 +47,22 @@
     gap: 20px;
 }
 
+.flex-item {
+    text-align: center;
+}
+
+.flex-item span {
+    display: block;
+    font-weight: bold; /* Make text bold */
+}
+
+.flex-item span:last-child {
+    font-weight: normal; /* Remove bold for the contact details and link */
+}
+
 .line {
-    margin-top: 20px;
-    width: 1px;
-    height: 80px;
+    height: 50px; /* Adjust height as needed */
+    width: 2px;
     background-color: var(--dark-font-color);
 }
 
@@ -59,8 +73,7 @@
     align-items: center;
     padding-left: 40px;
     gap: 20px;
-    background-color:var(--light-bg-font-color);
-    /* Optional background for better contrast */
+    background-color: var(--light-bg-font-color);
     width: 100%;
     height: 1000px;
     overflow: hidden;
@@ -68,7 +81,6 @@
 
 .vision-image {
     flex: 1;
-    /* background: url('../../img/your-image.jpg') no-repeat center center; */
     background-size: cover;
     height: 1000px;
     width: 50%;
@@ -76,16 +88,14 @@
 
 .vision-text {
     position: absolute;
-    top: 10px;
+    top: 100px;
     right: 105px;
-    flex: 1;
+    flex: 1 1;
     padding: 28px;
-    background-color: var( --light-bg-font-color);
+    background-color: #f8f8f8;
     border-radius: 10px;
     z-index: 1;
-    /* Ensure it's above the image */
-    text-align: justify;
-
+    text-align: left;
     width: 40%;
     height: 700px;
 }
@@ -93,6 +103,23 @@
 .vision-text h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #1B3C74;
+}
+
+.vision-text h3 {
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #1B3C74;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vision-text h3 svg {
+    width: 24px;
+    height: 24px;
+    fill: #1B3C74;
 }
 
 .vision-text p {
@@ -100,59 +127,144 @@
     line-height: 1.5;
 }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .overlay-text {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        padding: 60px;
+    }
 
-.testimonial-section {
+    .overlay-text h1 {
+        font-size: 60px;
+    }
 
-    position: relative;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    padding: 40px;
-    /* background-color: blanchedalmond; */
+    .overlay-text p {
+        font-size: 18px;
+    }
+
+    .vision-section {
+        padding-left: 20px;
+        flex-direction: column;
+    }
+
+    .vision-image {
+        width: 100%;
+        height: 50%;
+    }
+
+    .vision-text {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
 }
 
-.testimonial-text {
-    width: 40%;
-    padding-left:100px;
+@media (max-width: 768px) {
+    .overlay-text {
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        padding: 30px;
+    }
+
+    .overlay-text h1 {
+        font-size: 40px;
+    }
+
+    .overlay-text p {
+        font-size: 16px;
+    }
+
+    /* .flex-container {
+        flex-direction: column;
+    }
+
+    .line {
+        width: 80%;
+        height: 1px;
+        margin: 20px 0;
+    } */
+
+    .vision-section {
+        padding-left: 10px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .vision-image {
+        height: 40%;
+    }
+
+    .vision-text {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .vision-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .vision-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .vision-text p {
+        font-size: 0.9rem;
+    }
 }
 
-.testimonial-cards {
-    width: 40%;
-    position: relative;
-    display: flex;
-    padding-left: 100px;
-    background-color: white;
-}
-
-.testimonial-cards .testimonial-card {
-    width: 40%;
-    height: 250px;
-    background:white;
-    position:absolute;
-    color: black;
-    box-shadow: 0px 1px 5px black;
-    text-align: center;
+@media (max-width: 480px) {
+ 
+        .overlay-text {
+            top: 31%;
+            /* left: 50%; */
+            transform: translate(-50%, -15%);
+            padding: 20px;
+            width: 100%;
+        }
     
-}
-.testimonial-cards .card1{
-    /* background:rgb(98, 197, 33); */
-    top: 0px;
-}
 
-.testimonial-cards .card2{
-    /* background:blue; */
-    top: 30px;
-    right: 0px;
-}
+    .overlay-text h1 {
+        font-size: 30px;
+    }
 
-.testimonial-cards .card3{
-    /* background:rgb(94, 94, 184); */
-    top: 280px;
-    left: 100px;
-}
-.testimonial-cards .card4{
-    /* background:rgb(212, 117, 53); */
-    top: 310px;
-    right: 0px;
-}
+    .overlay-text p {
+        font-size: 14px;
+    }
 
+    .flex-item span {
+        font-size: 14px;
+    }
+
+    .vision-section {
+        padding-left: 0;
+        height: auto;
+    }
+
+    .vision-image {
+        height: 40%;
+    }
+
+    .vision-text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .vision-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .vision-text h3 {
+        font-size: 0.8rem;
+    }
+
+    .vision-text p {
+        font-size: 0.8rem;
+    }
+}
