@@ -1,0 +1,119 @@
+/* Banner container */
+.banner {
+    background-image: url('C:\Users\acoly\OneDrive\Desktop\projects\sloane\Sloane-Virtual-Hospital\src\img\home.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  /* Banner content */
+  .banner-content {
+    padding: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+  }
+  
+  /* Banner text */
+  .banner-text {
+    font-size: 5em;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Highlighted text */
+  .highlight {
+    color: #ffcc00; /* Yellow color for 'first choice' */
+  }
+  
+  /* Neonatology highlighted text */
+  .neonatology {
+    color: red; /* Red color for 'neonatology' */
+  }
+  
+  /* Button container */
+  .buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Schedule container */
+  .schedule-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid white;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  /* Schedule texts and divider */
+  .schedule-texts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .schedule-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  .vertical-divider {
+    border: none;
+    border-left: 1px solid white;
+    height: 40px; /* Adjust height to match text height */
+    margin: 0 10px;
+  }
+  
+  /* Button styles */
+  .btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .banner-text {
+      font-size: 1.5em;
+    }
+  
+    .btn {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  
+    .schedule-texts {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .vertical-divider {
+      display: none;
+    }
+  }
+  

@@ -33,7 +33,7 @@ const Navbar = () => {
           <img src={logo} alt="ClinIQ Logo" />
         </a>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><a href="/home">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/pages">Pages</a></li>
           <li><a href="/elements">Elements</a></li>
