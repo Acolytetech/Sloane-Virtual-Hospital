@@ -7,8 +7,8 @@ import OurPatient from './OurPatient'
 function Contact() {
   return (
     <div>
-      <ContactBanner/>
-      <ContactTeam/>
+      {/* <ContactBanner/> */}
+      {/* <ContactTeam/> */}
       <ContactForm/>
       <OurPatient/>
     </div>

@@ -4,14 +4,16 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 90px;
+    padding-top: 162px;
     gap: 20px;
     background-color: #eaf3f9;
+    max-width: 100%;
   }
   
-  /* Left Section Styling */
+ 
   .left-section {
     flex: 1;
-    max-width: 40%;
+    max-width: 60%;
   }
   
   .left-section h1 {
@@ -34,15 +36,17 @@
   }
   
   .left-section p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.375rem;
+    margin-top: .7em;
+    line-height: 1.4;
     color: #3a6ea1;
-  }
-  
-  /* Info Row Styling */
+    margin-bottom: 50px;
+}
+
   .info-row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    gap:70px;
     margin-bottom: 20px;
   }
   
@@ -50,21 +54,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+
     text-align: center;
+    max-width: 25%;
+  }
+  .info-item p{
+    font-size: 15px;
+    /* font-weight: 700 */
   }
   
   .icon {
     font-size: 2rem;
     color: #f46d67;
+    margin-bottom: .5em;
   }
   
-  /* Flex Container Styling */
+
   .flex-container {
     display: flex;
     align-items: center;
-    gap: 20px;
-  }
+    /* gap: 20px; */
+    justify-content: center;
+    margin-right: 140px;
+}
   
   .flex-item {
     text-align: center;
@@ -73,6 +85,7 @@
   .bold-text {
     font-weight: bold;
     color: #3a6ea1;
+    
   }
   
   .line {
@@ -81,10 +94,10 @@
     background-color: #3a6ea1;
   }
   
-  /* Right Section Styling */
+
   .right-section {
     flex: 1;
-    max-width: 50%;
+    max-width: 40%;
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
@@ -132,7 +145,7 @@
     background-color: #0056b3;
   }
   
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .contact-container {
       flex-direction: column;

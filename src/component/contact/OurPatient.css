@@ -1,32 +1,32 @@
-/* Container Styling */
+
 .our-patient-container {
     padding: 90px;
     text-align: center;
     background-color:white;
   }
   
-  /* Heading Styling */
+
   .carousel-heading {
     font-size: 1.5rem;
     color: #f46d67;
     margin-bottom: 60px;
   }
   
-  /* Testimonials Styling */
+ 
   .testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  /* Testimonial Item Styling */
+
   .testimonial-item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  /* Image Container Styling */
+
   .testimonial-image-container {
     border-radius: 50%;
     overflow: hidden;
