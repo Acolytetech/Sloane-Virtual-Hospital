@@ -10,7 +10,7 @@ import WorkingA from './WorkingA';
 import FaqComponent from './FaqComponent';
 import MissionVisionIcon from '../svg/MissionVisionIcon';
 import Mission from '../svg/Mission';
-
+ 
 const About = () => {
     return (
         <div>
@@ -37,7 +37,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
+ 
             {/* Vision Section */}
             <Wave />
             <div className="vision-section">
@@ -58,7 +58,7 @@ const About = () => {
                     <p>To simplify the patient journey by offering a seamless, virtual healthcare experience that encompasses diagnosis, prescription, medication delivery, and follow-up consultations. Our mission is to eliminate the barriers to healthcare access, reduce patient inconvenience, and provide timely medical interventions.</p>
                 </div>
             </div>
-
+ 
             {/* ServiceA Component */}
             {/* <ServiceA/> */}
             {/* <FunA/> */}
@@ -68,5 +68,5 @@ const About = () => {
         </div>
     );
 };
-
+ 
 export default About;
