@@ -19,7 +19,22 @@
     flex: 0 0 60%;
     padding: 10px;
     font-family: Arial, sans-serif;
+   
+      width: 603px;
+      height: 513px;
+      padding: 10px; /* Example padding */
+      margin: 20px;  /* Example margin */
+
+    
   }
+
+  .element {
+    width: 603px;
+    height: 513px;
+    padding: 10px; /* Example padding */
+    margin: 20px;  /* Example margin */
+  }
+  
   
   .title {
     font-size: 35px;

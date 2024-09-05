@@ -15,21 +15,24 @@
   .box1, .box2 {
     flex: 1;
     padding: 37px;
-   
+    padding-bottom: 8em;
+    padding-top: 8em;
     border-radius: 10px;
+    margin-bottom: 4em;
    
   }
   
   .box1 h2 {
     color: white;
     margin-bottom: 10px;
-    font-size: 3.75rem;
-    line-height: 1.066;
+    font-size: 3rem;
+    line-height: 1.05;
 }
   
   
   .box1 p {
     color: white;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    margin-top: .9em;
   }
   
