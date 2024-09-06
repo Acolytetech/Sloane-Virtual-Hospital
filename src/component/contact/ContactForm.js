@@ -12,15 +12,16 @@ function ContactForm() {
         <div className="info-row">
           <div className="info-item">
             <FaMapMarkerAlt className="icon" />
-            <h2>Location</h2>
+            <h2>Location
             <p>New York<br />60 East 65th Street<br />NY 10065</p>
+        </h2>
           </div>
           
           <div className="info-item">
             <FaClock className="icon" />
             <h2>Hours</h2>
             <p>Mon-Wed: 8am – 7pm<br />Thursday: 8am – 9pm<br />Friday: 8am – 5pm</p>
-          </div>
+          </div>  
           
           <div className="info-item">
             <FaShareAlt className="icon" />
@@ -31,13 +32,15 @@ function ContactForm() {
         
         <div className="flex-container">
           <div className="flex-item">
-            <span>Support Line 24/7</span>
+            <p>Support Line 24/7 <br/>
             <span className="bold-text">88 700 600</span>
+            </p>
           </div>
           <div className="line"></div>
           <div className="flex-item">
-            <span>Online Schedule</span>
+            <p>Online Schedule <br/>
             <a href="#" className="bold-text">Book here</a>
+            </p>
           </div>
         </div>
       </div>

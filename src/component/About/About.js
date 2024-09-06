@@ -26,13 +26,15 @@ const About = () => {
                     <p>Sloane Virtual Hospital delivers comprehensive online healthcare, offering video consultations, digital prescriptions, medication delivery, and diagnostic services, all supported by a strong network of medical professionals.</p>
                     <div className="flex-container">
                         <div className="flex-item">
-                            <span>Support Line 24/7</span>
+                            <p>Support Line 24/7 <br/>
                             <span>88 700 600</span>
+                            </p>
                         </div>
                         <div className="line"></div>
                         <div className="flex-item">
-                            <span>Online Schedule</span>
+                            <p>Online Schedule <br/>
                             <span>Book here</span>
+                            </p>
                         </div>
                     </div>
                 </div>

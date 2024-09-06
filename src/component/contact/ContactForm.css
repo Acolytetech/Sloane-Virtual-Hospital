@@ -2,25 +2,52 @@
 .contact-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    /* align-items: flex-start;
     padding: 90px;
     padding-top: 162px;
     gap: 20px;
     background-color: #eaf3f9;
-    max-width: 100%;
+    max-width: 100%; */
+    font-family: Inter,Arial, Helvetica, sans-serif;
+    height: 713.512px;
+    width: 1220px;
+    margin:0 10px 0 10px;
+    max-width: calc(100% +20px);
+
   }
   
  
   .left-section {
-    flex: 1;
-    max-width: 60%;
+    /* flex: 1;
+    max-width: 60%; */
+    font-family: Inter , Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    height: 713.521px;
+    width: 700px;
+    padding: 0 10px 0 10px;
+    min-height: auto;
+    max-width: 50%;
+    min-width: auto;
   }
   
   .left-section h1 {
-    font-size: 3.75rem;
+    /* font-size: 3.75rem;
     line-height: 1.066;
     margin-bottom: 10px;
-    color: #3a6ea1;
+    color: #3a6ea1; */
+overflow: hidden;
+    font-family: "Nato Serif",Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    font: 700px;
+    line-height: 63.96px;
+    text-align: left;
+    color: #3A6EA1;
+    height:127.891px;
+    width: 590px;
+    display: block;
   }
   
   .left-section h1 .highlight {
@@ -36,11 +63,21 @@
   }
   
   .left-section p {
-    font-size: 1.375rem;
+    /* font-size: 1.375rem;
     margin-top: .7em;
     line-height: 1.4;
     color: #3a6ea1;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
+
+    font-size: 22px;
+    font-style: italic;
+    font: 500;
+    /* line-height: 30.8px; */
+    /* text-align: left; */
+
+    color: #3A6EA1;
+    /* width: 590px; */
+    margin: 15px 0 0 0;
 }
 
   .info-row {
@@ -51,16 +88,17 @@
   }
   
   .info-item {
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
     align-items: center;
 
     text-align: center;
-    max-width: 25%;
+    max-width: 400px;
+    height: 400px;
   }
   .info-item p{
-    font-size: 15px;
-    /* font-weight: 700 */
+ 
   }
   
   .icon {
@@ -75,11 +113,18 @@
     align-items: center;
     /* gap: 20px; */
     justify-content: center;
-    margin-right: 140px;
+    margin-right: 0px;
 }
   
   .flex-item {
     text-align: center;
+    width: fit-content;
+    height: fit-content;
+
+  }
+  .flex-item p{
+    width: fit-content;
+    height: 100px;
   }
   
   .bold-text {

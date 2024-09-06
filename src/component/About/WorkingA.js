@@ -5,7 +5,7 @@ import AerodUp from '../svg/AeroUp';
 import one from '../../img/Image-9 (2).png'
 import two from '../../img/filling-medical-history-1 (2).png'
 import three from '../../img/successful-medical-team-2-2 (2).png'
-
+ 
 function WorkingA() {
   // Sample data for each card
   const cardData = [
@@ -25,17 +25,17 @@ function WorkingA() {
       text: 'There are many variations of passage of available, but the majority have suffered.',
     },
     {
-      imageSrc: 'path/to/image4.jpg',
+      imageSrc: two,
       heading: 'Get Care & Relief',
       text: 'There are many variations of passage of available, but the majority have suffered.',
     },
   ];
-
+ 
   return (
     <div className="workingA-container">
       <span className="custom-span">How Does It Work?</span>
       <h2 className="custom-heading">Our Working Process</h2>
-
+ 
       <div className="card-container">
         {cardData.map((card, index) => (
           <React.Fragment key={index}>
@@ -61,5 +61,5 @@ function WorkingA() {
     </div>
   );
 }
-
+ 
 export default WorkingA;
